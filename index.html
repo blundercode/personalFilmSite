@@ -43,7 +43,6 @@
 
         canvas {
             position: absolute;
-            left: 0;
             top: 25px;
             width: 15%;
             height: 15%;
@@ -107,6 +106,54 @@
                 inset 0 -0.2em #000;
             display: inline;
         }
+
+        .title-header {
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        .title-subhead {
+                font-size: 60px;
+                font-weight: 300;
+            }
+
+        @media screen and (max-width: 480px) {
+            .section-header {
+                font-size: 30px;
+                text-align: center;
+                border-bottom: 5px dotted white;
+                margin-bottom: 15px;
+
+            }
+
+            .title-header {
+                font-size: 50px;
+                font-weight: 500;
+            }
+
+            .title-subhead {
+                font-size: 40px;
+                font-weight: 300;
+                margin-top:5px
+            }
+
+            canvas {
+                right: 25px !important;
+                position: absolute;
+                top: -40px;
+                width: 20%;
+                height: 20%;
+                background: #F8C0C0;
+            }
+        }
+
+        @media screen and (min-width: 480px) {
+            .section-header {
+                font-size: 30px;
+                text-align: right;
+                border-right: 5px dotted white;
+            }
+        }
     </style>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -129,11 +176,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-7" style="font-size: 80px;font-weight: 500;">Erik McFarland </div>
+            <div class="col-md-7 title-header">Erik
+                McFarland </div>
         </div>
         <div class="row" style="margin-top: -30px;">
             <div class="col-md-2"></div>
-            <div class="col-md-8" style="font-size: 60px;font-weight: 300;">Director / Filmmaker</div>
+            <div class="col-md-8 title-subhead">Director / Filmmaker</div>
         </div>
         <div class="row">
             <div class="col-md-2"></div>
@@ -148,7 +196,7 @@
             </div>
         </div>
         <div class="row" style="margin-top:5%;text-align: center">
-            <div class="col-md-2" style="font-size: 30px;text-align: right;border-right: 5px dotted white;">Recent
+            <div class="col-md-2 section-header">Recent
                 <br>Work</div>
             <div class="col-md-3">
                 <div class="poster">
@@ -158,9 +206,23 @@
                 <a href="https://www.vimeo.com/1" target="_blank">Vimeo</a><br>
                 <a href="https://www.imdb.com/" target="_blank">IMDB</a>
             </div>
+            <div class="col-md-3">
+                <div class="poster">
+                    <img src="image/VibeCheck.png" />
+                </div>
+                <u>Post-Production</u><br>
+                <a href="https://www.imdb.com/" target="_blank">IMDB</a>
+            </div>
+            <div class="col-md-3">
+                <div class="poster">
+                    <img src="image/KnightFight.png" />
+                </div>
+                <u>Pre-Production</u><br>
+                <a href="https://www.imdb.com/" target="_blank">IMDB</a>
+            </div>
         </div>
         <div class="row" style="margin-top:5%;margin-bottom:10%">
-            <div class="col-md-2" style="font-size: 30px;text-align: right;border-right: 5px dotted white;">Past
+            <div class="col-md-2 section-header">Past
                 <br>Work</div>
             <div class="col-md-3" style="text-align:center">
                 <div class="poster">
